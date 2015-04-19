@@ -29,6 +29,7 @@ path/to/ruby path/to/speed_test.rb
 
 #### Exporting results to CSV
 I've included a script to export a CSV file that can be used in excel or google sheets.
+To use this just run `./export.sh` from the project directory.
 
 #### Future
 Some ideas to expand on.
