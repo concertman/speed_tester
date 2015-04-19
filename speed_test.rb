@@ -13,8 +13,6 @@ Open3.popen3(COMMAND) do |_stdin, stdout, _stderr, _wait_thr|
   output = stdout.read
 end
 
-puts "output == #{output}"
-
 begin
   db = SQLite3::Database.new('speed_test.db')
   db.execute "CREATE TABLE IF NOT EXISTS Speed_Tests(id INTEGER PRIMARY KEY, date NUMERIC, ping REAL, upload REAL, download REAL)"
