@@ -16,7 +16,7 @@ end
 begin
   db = SQLite3::Database.new("#{File.expand_path(File.dirname(__FILE__))}/speed_test.db")
   db.execute "CREATE TABLE IF NOT EXISTS Speed_Tests(id INTEGER PRIMARY KEY, date NUMERIC, ping REAL, upload REAL, download REAL)"
-  db.execute "INSERT INTO Speed_Tests(date, ping, upload, download) VALUES ('#{DateTime.now}', '#{output.split[1]}', '#{output.split[4]}', '#{output.split[7]}')"
+  db.execute "INSERT INTO Speed_Tests(date, ping, upload, download) VALUES ('#{DateTime.now}', '#{output.split[1]}', '#{output.split[7]}', '#{output.split[4]}')"
 rescue SQLite3::Exception => e
   puts 'Exception occurred'
   puts e
