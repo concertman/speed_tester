@@ -4,7 +4,7 @@ A small system that I use to measure my home internet connection speed.
 
 #### Requirements
 
-speedtest-cli
+[speedtest-cli](https://github.com/sivel/speedtest-cli)
 ```
 easy_install speedtest-cli
 ```
