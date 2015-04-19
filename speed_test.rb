@@ -5,7 +5,7 @@ require 'open3'
 require 'sqlite3'
 require 'date'
 
-COMMAND = 'speedtest-cli --simple'
+COMMAND = '/usr/local/bin/speedtest-cli --simple'
 
 output = ''
 
